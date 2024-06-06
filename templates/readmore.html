@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Read More Page</title>
+  <link rel="icon" type="image/png" href="https://cdn.britannica.com/48/123848-050-92824F8A/Cyclone-Catarina-International-Space-Station-Brazil-March-2004.jpg" alt="Cyclone Image" style="width: 200px;margin-bottom: 20px; margin-top: 20px"> <!-- Replace "favicon.png" with the path to your favicon image -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .read-more {
+      position: relative;
+    }
+
+    .read-more input[type="checkbox"] {
+      display: none;
+    }
+
+    .read-more input[type="checkbox"] + p {
+      max-height: 100px;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .read-more input[type="checkbox"]:checked + p {
+      max-height: none;
+    }
+
+    .read-more-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #007bff;
+      color: #fff;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .read-more-label:hover {
+      background-color: #0056b3;
+    }
+
+    header {
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    /* Added CSS for image alignment */
+    .read-more img {
+      display: block;
+      margin: 20px auto; /* Adjust margin as needed */
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">DeepCycloneForecaster.</a>
+            <ul>
+                <li><a href="/explore">Explore</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <div class="container">
+    <div class="read-more">
+      <h2>Why Detecting Cyclones is Important</h2>
+      <p>Cyclones are natural disasters that can cause significant damage to property and infrastructure, as well as loss of life. Detecting cyclones early allows for timely warnings to be issued, giving people in affected areas the opportunity to evacuate and seek shelter. Additionally, accurate detection and tracking of cyclones enable emergency response teams to prepare and allocate resources effectively, minimizing the impact of the disaster. Furthermore, understanding the behavior of cyclones helps scientists improve forecasting models, leading to better predictions of future cyclone activity and improved disaster preparedness.</p>
+      <h2>Solutions We Came Up With</h2>
+      <p><strong>Improved Accuracy:</strong> We have developed a Deep Learning model that can learn complex patterns and relationships in cyclone data, leading to more accurate intensity estimations compared to traditional methods.</p>
+      <p><strong>Customized CNN:</strong> Built a customized Convolutional Neural Network (CNN) model which can detect cyclone intensity for the IR images with great accuracy.</p>
+      <p><strong>Data Augmentation:</strong> To overcome the limitations of low-resolution images in our dataset, we have employed data augmentation techniques. This innovative approach enhances the accuracy of our analyses, establishing a new benchmark for image-centric tasks.</p>
+      <h2>Architecture Diagram </h2>
+      <img src="/static/images/archi.jpg" alt="Table margin-bottom:" style="max-width: 100%;">
+    </div>
+  </div>
+</body>
+</html>
